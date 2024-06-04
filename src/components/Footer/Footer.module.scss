@@ -1,0 +1,10 @@
+@import '../../styles/variablesMixins';
+
+footer{
+    background-color: $black-color;
+    color: white;
+    padding: $padding2;
+    height: 200px;
+
+    @include spaceBetweenCenterColumn;
+}

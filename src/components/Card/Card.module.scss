@@ -1,0 +1,36 @@
+.Card{
+    border-radius: 10px;
+    position: relative;
+    padding: 25px;
+    width: 90%;
+}
+.CardCover{
+    border-radius: 10px;
+    height: 300px; 
+    width: 100%;
+    filter: brightness(0.8);
+}
+.CardTitle {
+    bottom: 30px;
+    padding-left: 10px;
+    width: 40%;
+    position: absolute;
+    color: white;
+    font-size: large;
+}
+
+@media screen and (max-width: 768px) {
+    .Card{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Card{
+        padding: 2px;
+        width: 100%;
+    }
+    .CardTitle {
+        bottom: 10px;
+    }
+}

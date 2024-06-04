@@ -1,0 +1,21 @@
+.Rating{
+    display: flex;
+    justify-content: end;
+    padding-right: 50px; 
+}
+ .Rating span {
+     font-size: 30px; 
+     margin-right: 8px; 
+}
+
+@media screen and (max-width: 768px) {
+     .Rating {
+        display: flex;
+        justify-content: start;
+        padding-right: 0px;
+    }
+      .Rating img{
+        width: 25px; 
+        margin-right: 5px; 
+    }
+}

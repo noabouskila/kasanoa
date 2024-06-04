@@ -1,0 +1,66 @@
+// .Home{
+ 
+// }
+.Banner{
+    border-radius: 20px;
+    margin: 40px;
+    background-image:  linear-gradient(rgba(54, 53, 53, 0.4),rgba(54, 53, 53, 0.4)),url('../../assets/ImgHome.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    height: 200px; 
+    position: relative;
+}
+.Banner h1{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    top: 35%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+.Contain{
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    margin: 40px;
+    flex-direction: column;
+    display: flex;  
+    padding: 20px 20px 20px 20px;
+}
+.CardList{
+    display: grid;
+    flex-direction: row; 
+    flex-wrap: wrap;  
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;  
+}
+  
+@media screen and (max-width: 768px) {
+    .Banner{
+        border-radius: 10px;
+        margin: 20px;
+        height: 110px; 
+    }
+    .Banner h1{
+        padding: 0px 0px 0px 20px;
+        top: 35%;
+        left: 50%;
+        transform: translate(-100%, -50%);
+        font-size: 1em;
+        text-align: left;
+        word-wrap: break-word; 
+    }
+    .Contain{
+        background: none;
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .CardList{
+        display: flex; 
+        gap: 0px; 
+    }
+}
+
+
+

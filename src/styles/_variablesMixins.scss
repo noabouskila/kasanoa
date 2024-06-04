@@ -1,0 +1,24 @@
+$black-color : black;
+$padding2 : 2%;
+
+@mixin spaceBetweenCenterRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin spaceBetweenCenterColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+   
+   
+}
+
+@mixin SpaceAround{
+    display: flex;
+    justify-content: space-around;
+    
+}

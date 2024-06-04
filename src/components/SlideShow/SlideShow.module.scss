@@ -1,0 +1,67 @@
+.Slideshow {
+    position: relative; 
+    padding: 50px 50px 10px 50px;
+  }
+  .SlideshowImage {
+    border-radius: 10px;
+    width: 100%;
+    height: 80vmin;
+    object-fit: cover;
+  }
+  .IconLeft {
+    position: absolute;
+    width: 130px;
+    top: 50%; 
+    left: 3%;
+    transform: translateY(-40%) ;
+    cursor: pointer; 
+  }
+  .IconRight {
+    position: absolute;
+    width: 130px;
+    top: 50%; 
+    right: 3%;
+    transform: translateY(-40%) ; 
+    cursor: pointer;
+  }
+  .CurrentImage{
+    position: absolute;
+    bottom: 5%; 
+    padding-left: 45%;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Slideshow {
+      padding: 30px 20px 0px 20px;
+    }
+    .IconLeft {
+      width: 40px;
+      left: 5%;
+    }
+    .IconRight {
+      width: 40px;
+      right: 5%;
+    }
+    .CurrentImage{
+      bottom: 2%; 
+      padding-left: 40%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .IconLeft {
+      width: 90px;
+      left: 5%;
+    }
+    .IconRight {
+      width: 90px;
+      right: 5%;
+    }
+    .CurrentImage{
+      bottom: 2%; 
+      padding-left: 40%;
+    }
+  }

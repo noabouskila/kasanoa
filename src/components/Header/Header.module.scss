@@ -1,0 +1,25 @@
+
+@import '../../styles/_variablesMixins.scss';
+
+
+
+.Header{
+    @include spaceBetweenCenterRow;
+    padding:2% ;
+}
+.Nav{
+    width: 30%;
+   @include SpaceAround;
+  
+}
+.Nav1, .Nav2{
+    color: $black-color ;
+    text-decoration: none;
+    font-weight:500;
+    font-size: x-large;
+
+}
+.Nav1:hover, .Nav2:hover, .Nav1:active, .Nav2:active{
+    text-decoration: underline; 
+   
+}

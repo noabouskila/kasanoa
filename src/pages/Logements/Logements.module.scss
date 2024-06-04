@@ -1,0 +1,112 @@
+.Accommodation{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+    padding-left: 50px;
+}
+.AccommodationTitle{
+    color:#FF6060;
+    font-weight: 500;
+    line-height: 1;
+}
+.AccommodationText{
+    color:#FF6060;
+    font-size: x-large;
+    font-weight: 500;
+}
+.AccommodationProfileRating{
+    display: flex;
+    flex-direction: column;
+}
+.AccommodationProfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding-right: 50px;
+}
+.AccommodationRating{
+    align-items: right;
+    justify-content: right;
+   
+}
+.AccommodationName {
+    width: 90px;
+    text-align: right;
+    color: #FF6060;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: x-large;
+   }
+.AccommodationPicture {
+    border-radius: 50%;
+    width: 15%;
+}
+.AccommodationTags{    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.AccommodationTag {
+    background-color: #FF6060;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    margin-right: 20px; 
+    font-size: medium;
+    margin-bottom: 2%;
+}
+.AccommodationCollapse {
+    display: flex;
+}
+.Collapse{
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+li {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+    .Accommodation{
+        padding-left: 20px;
+        display: block;
+    }
+    .AccommodationText{
+        font-size: large;
+    }
+    .AccommodationProfileRating{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-top: 5%;
+    }
+    .AccommodationProfile { 
+        padding-right: 20px;
+    }
+    .AccommodationName{
+        font-size: large;
+        width: 50px;
+        margin-right: 30px;
+        font-size: large;
+    }
+    .AccommodationPicture {
+        width: 25%;
+    }
+    .AccommodationRating{
+        align-items: left;
+        justify-content: center;
+       
+    }
+    .AccommodationTag {
+        padding: 5px 10px 5px 10px;
+        border-radius: 15px;
+    }
+    .AccommodationCollapse {
+        flex-direction: column;  
+    }
+    .Collapse{
+        width: 95%; 
+    }
+}
