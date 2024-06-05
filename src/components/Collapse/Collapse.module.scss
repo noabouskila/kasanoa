@@ -14,7 +14,8 @@ button{
 .Collapse{
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin : 30px 3% 0 3%; 
+
 }
 .Rotate{
     transform: rotate(180deg);
@@ -33,6 +34,7 @@ button{
     flex: 1;
     max-height: 0; 
     overflow: hidden; 
+    // A CORRIGER 
     transition: max-height 2s ease-in-out, transform 0.3s ease;
 
 }

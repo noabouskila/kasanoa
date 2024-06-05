@@ -1,112 +1,245 @@
-.Accommodation{
+// .Accommodation{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr; 
+//     align-items: center; 
+//     padding-left: 50px;
+// }
+// .AccommodationTitle{
+//     color:#FF6060;
+//     font-weight: 500;
+//     line-height: 1;
+// }
+// .AccommodationText{
+//     color:#FF6060;
+//     font-size: x-large;
+//     font-weight: 500;
+// }
+// .AccommodationProfileRating{
+//     display: flex;
+//     flex-direction: column;
+// }
+// .AccommodationProfile {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end; 
+//     align-items: center; 
+//     padding-right: 50px;
+// }
+// .AccommodationRating{
+//     align-items: right;
+//     justify-content: right;
+   
+// }
+// .AccommodationName {
+//     width: 90px;
+//     text-align: right;
+//     color: #FF6060;
+//     margin-right: 30px;
+//     font-weight: 500;
+//     font-size: x-large;
+//    }
+// .AccommodationPicture {
+//     border-radius: 50%;
+//     width: 15%;
+// }
+// .AccommodationTags{    
+//     display: flex;
+//     flex-wrap: wrap;
+//     width: 100%;
+// }
+// .AccommodationTag {
+//     background-color: #FF6060;
+//     color: white;
+//     padding: 10px 20px 10px 20px;
+//     border-radius: 15px;
+//     margin-right: 20px; 
+//     font-size: medium;
+//     margin-bottom: 2%;
+// }
+// .AccommodationCollapse {
+//     display: flex;
+// }
+// .Collapse{
+//     width: 100%;
+//     margin-left: 3%;
+//     margin-right: 3%;
+// }
+// li {
+//     list-style-type: none;
+// }
+
+// @media screen and (max-width: 768px) {
+//     .Accommodation{
+//         padding-left: 20px;
+//         display: block;
+//     }
+//     .AccommodationText{
+//         font-size: large;
+//     }
+//     .AccommodationProfileRating{
+//         display: flex;
+//         flex-direction: row-reverse;
+//         justify-content: space-between;
+//         padding-top: 5%;
+//     }
+//     .AccommodationProfile { 
+//         padding-right: 20px;
+//     }
+//     .AccommodationName{
+//         font-size: medium;
+//         width: 50px;
+//         margin-right: 30px;
+       
+//     }
+//     .AccommodationPicture {
+//         width: 25%;
+//     }
+//     .AccommodationRating{
+//         align-items: left;
+//         justify-content: center;
+       
+//     }
+//     .AccommodationTag {
+//         padding: 5px 10px 5px 10px;
+//         border-radius: 15px;
+//     }
+//     .AccommodationCollapse {
+//         flex-direction: column;  
+//     }
+//     .Collapse{
+//         width: 95%; 
+//     }
+// }
+
+
+
+@import '../../styles/_variablesMixins.scss';
+
+.Accommodation {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     padding-left: 50px;
 }
-.AccommodationTitle{
-    color:#FF6060;
+
+.AccommodationTitle {
+    color: $red-color;
     font-weight: 500;
     line-height: 1;
 }
-.AccommodationText{
-    color:#FF6060;
-    font-size: x-large;
+
+.AccommodationText {
+    color: $red-color;
+    font-size: $font-size-large;
     font-weight: 500;
 }
-.AccommodationProfileRating{
-    display: flex;
-    flex-direction: column;
+
+.AccommodationProfileRating {
+    @include flexColumn;
 }
+
 .AccommodationProfile {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; 
-    align-items: center; 
+    @include flexRow;
+    justify-content: flex-end;
+    align-items: center;
     padding-right: 50px;
 }
-.AccommodationRating{
+
+.AccommodationRating {
     align-items: right;
     justify-content: right;
-   
 }
+
 .AccommodationName {
     width: 90px;
     text-align: right;
-    color: #FF6060;
+    color: $red-color;
     margin-right: 30px;
     font-weight: 500;
-    font-size: x-large;
-   }
+    font-size: $font-size-large;
+}
+
 .AccommodationPicture {
     border-radius: 50%;
     width: 15%;
 }
-.AccommodationTags{    
-    display: flex;
+
+.AccommodationTags {
+    @include flexRow;
     flex-wrap: wrap;
     width: 100%;
 }
+
 .AccommodationTag {
-    background-color: #FF6060;
-    color: white;
-    padding: 10px 20px 10px 20px;
+    background-color: $red-color;
+    color: $white-color;
+    padding: $padding-medium;
     border-radius: 15px;
-    margin-right: 20px; 
-    font-size: medium;
-    margin-bottom: 2%;
+    margin-right: 20px;
+    font-size: $font-size-medium;
+    margin-bottom: $margin-medium;
 }
+
 .AccommodationCollapse {
-    display: flex;
+    @include flexRow;
 }
-.Collapse{
+
+.Collapse {
     width: 100%;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: $margin-small;
+    margin-right: $margin-small;
 }
+
 li {
     list-style-type: none;
 }
 
 @media screen and (max-width: 768px) {
-    .Accommodation{
+    .Accommodation {
         padding-left: 20px;
         display: block;
     }
-    .AccommodationText{
+
+    .AccommodationText {
         font-size: large;
     }
-    .AccommodationProfileRating{
-        display: flex;
+
+    .AccommodationProfileRating {
+        @include flexRow;
         flex-direction: row-reverse;
         justify-content: space-between;
         padding-top: 5%;
     }
-    .AccommodationProfile { 
+
+    .AccommodationProfile {
         padding-right: 20px;
     }
-    .AccommodationName{
-        font-size: large;
+
+    .AccommodationName {
+        font-size: $font-size-medium;
         width: 50px;
         margin-right: 30px;
-        font-size: large;
     }
+
     .AccommodationPicture {
         width: 25%;
     }
-    .AccommodationRating{
+
+    .AccommodationRating {
         align-items: left;
         justify-content: center;
-       
     }
+
     .AccommodationTag {
-        padding: 5px 10px 5px 10px;
+        padding: $padding-small;
         border-radius: 15px;
     }
+
     .AccommodationCollapse {
-        flex-direction: column;  
+        flex-direction: column;
     }
-    .Collapse{
-        width: 95%; 
+
+    .Collapse {
+        width: 95%;
     }
 }

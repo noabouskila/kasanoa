@@ -1,25 +1,78 @@
 
+// @import '../../styles/_variablesMixins.scss';
+
+
+
+// .Header{
+//     @include spaceBetweenCenterRow;
+//     padding:2% ;
+// }
+// .Nav{
+//     width: 30%;
+//    @include SpaceAround;
+  
+// }
+// .Nav1, .Nav2{
+//     color: $black-color ;
+//     text-decoration: none;
+//     font-weight:500;
+//     font-size: x-large;
+
+// }
+// .Nav1:hover, .Nav2:hover, .Nav1:active, .Nav2:active{
+//     text-decoration: underline; 
+   
+// }
+
+
+// @media screen and (max-width: 768px) {
+//     .Logo > img {
+//         width: 75%;
+//     }
+
+//     .Nav{
+//         width: 45%;
+//     }
+//     .Nav1 , .Nav2{
+//         font-size: 12px;
+//     }  
+    
+// }
+
+
 @import '../../styles/_variablesMixins.scss';
 
-
-
-.Header{
+.Header {
     @include spaceBetweenCenterRow;
-    padding:2% ;
+    padding: $padding-large;
 }
-.Nav{
-    width: 30%;
-   @include SpaceAround;
-  
-}
-.Nav1, .Nav2{
-    color: $black-color ;
-    text-decoration: none;
-    font-weight:500;
-    font-size: x-large;
 
+.Nav {
+    width: 30%;
+    @include spaceAround;
 }
-.Nav1:hover, .Nav2:hover, .Nav1:active, .Nav2:active{
-    text-decoration: underline; 
-   
+
+.Nav1, .Nav2 {
+    color: $black-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: $font-size-large;
+}
+
+.Nav1:hover, .Nav2:hover, .Nav1:active, .Nav2:active {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .Logo > img {
+        width: 75%;
+    }
+
+    .Nav {
+        width: 45%;
+    }
+
+    .Nav1, .Nav2 {
+        font-size: $font-size-small;
+    }
 }

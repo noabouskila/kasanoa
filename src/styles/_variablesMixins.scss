@@ -1,24 +1,73 @@
-$black-color : black;
-$padding2 : 2%;
+// $black-color : black;
+// $padding2 : 2%;
 
-@mixin spaceBetweenCenterRow{
+// @mixin spaceBetweenCenterRow{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// @mixin spaceBetweenCenterColumn{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+    
+
+   
+   
+// }
+
+// @mixin SpaceAround{
+//     display: flex;
+//     justify-content: space-around;
+    
+// }
+// Couleurs
+$black-color: black;
+$red-color: #FF6060;
+$white-color: white;
+
+// Tailles
+$padding-small: 5px 10px;
+$padding-medium: 10px 20px;
+$padding-large: 2%;
+$padding2: 2%;  // Pour compatibilité avec le code existant
+$margin-small: 3%;
+$margin-medium: 2%;
+$font-size-large: x-large;
+$font-size-medium: medium;
+$font-size-small: 12px;
+
+// Mixins
+@mixin spaceBetweenCenterRow {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-@mixin spaceBetweenCenterColumn{
+@mixin spaceBetweenCenterColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
-   
-   
 }
 
-@mixin SpaceAround{
+@mixin spaceAround {
     display: flex;
     justify-content: space-around;
-    
+}
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,10 +1,24 @@
+// @import '../../styles/variablesMixins';
+
+// footer{
+//     background-color: $black-color;
+//     color: white;
+//     padding: $padding2;
+//     height: 200px;
+//     margin-top: 4%;
+
+//     @include spaceBetweenCenterColumn;
+// }
+
+
 @import '../../styles/variablesMixins';
 
-footer{
+footer {
     background-color: $black-color;
-    color: white;
+    color: $white-color;
     padding: $padding2;
     height: 200px;
+    margin-top: 4%;
 
     @include spaceBetweenCenterColumn;
 }

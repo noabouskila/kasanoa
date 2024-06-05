@@ -12,8 +12,8 @@ function Header() {
                 </Link>
 
                 <nav className={styles.Nav} >
-                    <Link to="/Home"  className={styles.Nav1}>Acceuil</Link>
-                    <Link to="/About" className={styles.Nav2}>A propos</Link>
+                    <Link to="/Home"  className={styles.Nav1}>ACCUEIL</Link>
+                    <Link to="/About" className={styles.Nav2}>A PROPOS </Link>
                 </nav>
             </header>
         </div>

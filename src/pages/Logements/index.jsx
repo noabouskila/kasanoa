@@ -29,7 +29,7 @@ function Logements() {
                 const response = await fetch('/data/logements.json')
                 // gestion erreur specifique : reponse reseau : 
                 if(!response.ok){
-                    throw new Error('Erreur de chargement du fichier json : ' , response.statusText)
+                    throw new Error('Erreur de chargement du fichier json : ' + response.statusText)
                 }
                 const data =  await response.json()
 
