@@ -34,14 +34,16 @@ button{
     flex: 1;
     max-height: 0; 
     overflow: hidden; 
-    // A CORRIGER 
     transition: max-height 2s ease-in-out, transform 0.3s ease;
-
+}
+.CollapseTitle{
+    margin: 0;
+    font-weight: bold;
 }
 .CollapseOpen {
     background-color: #f5f3f3;
     max-height: 500px; 
-    color: #FF6060;
+    color: black;
 }
 
 @media screen and (max-width: 768px) {

@@ -15,7 +15,7 @@ function Collapse({title , text}) {
     return (
         <div className={styles.Collapse} >
             <button onClick={toggleCollapse}>
-                {title}
+                <p className={styles.CollapseTitle}>{title}</p>
                 <img src={arrowTop} alt="fleche"  className={isOpen ? styles.Rotate : ''} />
             </button>
 

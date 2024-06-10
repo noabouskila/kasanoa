@@ -8,12 +8,12 @@ function Header() {
         <div>
             <header className={styles.Header}>
                 <Link to="/Home" className={styles.Logo} >
-                    <img src={logo} alt="image logo kasa" />
+                    <img src={logo} alt="logo kasa" />
                 </Link>
 
                 <nav className={styles.Nav} >
-                    <Link to="/Home"  className={styles.Nav1}>ACCUEIL</Link>
-                    <Link to="/About" className={styles.Nav2}>A PROPOS </Link>
+                    <Link to="/Home"  className={styles.Nav1}>Accueil</Link>
+                    <Link to="/About" className={styles.Nav2}>A Propos</Link>
                 </nav>
             </header>
         </div>

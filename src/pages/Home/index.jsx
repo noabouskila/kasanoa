@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from "./Home.module.scss"
 import Card from '../../components/Card';
+import PropTypes from 'prop-types'
 
 
 function Home() {
@@ -53,5 +54,12 @@ function Home() {
         </div>
     );
 }
+
+
+Home.propTypes = {
+    title: PropTypes.string,
+    cover: PropTypes.string,
+    id: PropTypes.string,
+};
 
 export default  Home;

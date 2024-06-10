@@ -11,14 +11,56 @@
 // }
 
 
-@import '../../styles/variablesMixins';
+// @import '../../styles/variablesMixins';
 
-footer {
-    background-color: $black-color;
-    color: $white-color;
-    padding: $padding2;
-    height: 200px;
-    margin-top: 4%;
+// footer {
+//     background-color: $black-color;
+//     color: $white-color;
+//     padding: $padding2;
+//     height: 200px;
+//     margin-top: 4%;
 
-    @include spaceBetweenCenterColumn;
+//     @include spaceBetweenCenterColumn;
+
+//     img{
+//         width: 200%;
+//     }
+// }
+
+
+
+footer{
+background-color: black; 
+text-align: center;
+align-items: center;
+color: white;
+left: 0;
+width: 100%;
+margin-top: 40px;
+position: absolute;
+height: 235px;
 }
+
+.FooterLogo{
+height: 5vmin;
+padding-top: 45px;
+padding-bottom: 15px;
+}
+.FooterText{
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+.FooterLogo{
+    height: 10vmin;
+    width: 40vmin;
+    padding-top: 80px;
+}
+.FooterText{
+    padding-bottom: 60px;
+    width: 40%;
+    padding-left: 30%;
+}
+}
+ 

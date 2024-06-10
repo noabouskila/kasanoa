@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import  styles from "./Logements.module.scss"
 import { useParams, useNavigate } from 'react-router-dom';
 import Collapse from '../../components/Collapse'; 
-import Rating from '../../components/RatingStars';
+import RatingStars from '../../components/RatingStars';
 import SlideShow from '../../components/SlideShow'; 
 import PropTypes from 'prop-types';
 
@@ -103,7 +103,7 @@ function Logements() {
                             </div>
 
                             {/* Rating base par defaut de parseint est 10  */}
-                            <Rating className={styles.AccommodationRating} rating={parseInt(accommodation.rating, 10)} />
+                            <RatingStars className={styles.AccommodationRating} rating={parseInt(accommodation.rating, 10)} />
                             
                         </div>
                         
@@ -147,6 +147,6 @@ Logements.propTypes = {
     tags: PropTypes.arrayOf(PropTypes.string),
     description: PropTypes.string,
     equipments: PropTypes.arrayOf(PropTypes.string)
-  };
+};
 
 export default Logements;
